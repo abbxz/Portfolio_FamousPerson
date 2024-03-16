@@ -1,0 +1,74 @@
+body{
+    line-height: 1.8;
+    background-color: rgb(29, 29, 54)!important;
+    color: aliceblue !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 800;
+}
+a{
+    /* color: rgb(226, 164, 83) !important; */
+    text-decoration: none;
+    transition: all 0.5s ease;
+    font-weight: 700;
+}
+a:hover{
+    color: rgb(255, 193, 7) !important;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+section{
+padding-top: 150px;    
+padding-bottom: 150px;
+}
+/* navbar */
+.navbar{
+    box-shadow: -1px 5px 8px 0px rgba(0,0,0,0.75);
+}
+/* Home */
+#Home{
+    color: aliceblue !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(./images/APJ.jpeg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#Home h1{
+    font-size: 70px;
+    text-shadow: 2px 4px 5px rgba(0,0,0,0.59);
+}
+#Home p{ font-size: 20px;}
+/* About */
+#About h1{ font-size: 70px;}
+#Achievements h1{ font-size: 70px;}
+#Achievements #a1, #a2, #a3{
+    border: 1px solid white;
+    padding: 20px;
+}
+/* Awards */
+#img-wrap img{
+    width: 500px;
+    filter: drop-shadow(5px 5px 7px #000000);
+}
+/* books */
+.books{
+    overflow: hidden;
+    white-space: nowrap;
+}
+.books-slide{
+    display: inline-block;
+    animation: 12s books infinite linear;
+}
+.books-slide img{
+    width: 280px;
+    margin: 0 20px;
+  
+}
+@keyframes books {
+    from{ transform: translateX(0); }
+    to{ transform: translateX(-100%); }
+}
